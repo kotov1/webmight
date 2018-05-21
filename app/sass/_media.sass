@@ -1,0 +1,247 @@
+@import "vars"
+
+
+@media only screen and (max-width : 1199px)
+
+	/* ---------------------------------------
+		Header
+	 --------------------------------------- */
+	.header
+		height: 68vh
+
+	.author-photo
+		width: 300px
+
+	.pageTitle
+		font-size: 14px
+
+	/**/
+
+
+
+@media only screen and (max-width : 991px)
+
+
+	/* ---------------------------------------
+		Header
+	 --------------------------------------- */
+	.header
+		height: auto
+
+	.author-photo
+		top: 0
+		width: 250px
+		margin: 30px auto 0
+
+	.pageTitle
+		height: auto
+		margin-top: 18vh
+		font-size: 11px
+
+
+	/* ---------------------------------------
+		navigation 
+	 --------------------------------------- */
+	.navbar__menu
+		transition: all .25s
+		position: absolute
+		top: -36px
+		right: 15px
+		height: 36px
+		width: 36px
+		z-index: 100
+		cursor: pointer
+
+		.navbar__list
+			flex-direction: column
+			transition: all 0s
+			position: fixed
+			right: -9000px
+
+		.navbar__toggle
+			transition: all .25s
+			content: ""
+			height: 3px
+			width: 30px
+			border-radius: 15px
+			background-color: $text_color
+			position: absolute
+			top: 35px
+			right: 0
+			z-index: 10
+			&::before, &::after  
+				transition: all .25s
+				content: ""
+				position: absolute
+				left: 0
+				height: 3px
+				width: 30px
+				border-radius: 15px
+				background-color: $text_color
+				top: -8px
+			&::before
+				top: -8px
+			&::after 
+				top: 8px
+	
+	.b-a-expanded 
+		transition: all .25s
+		top: -0px
+	
+	.navbar__menu--expanded 
+		transition: all .25s
+		text-align: center
+		line-height: 2em
+		height: 100%
+		width: 50vw
+		border-left: 1px solid $text_color
+		position: fixed
+		right: 0
+		top: 0
+		background-color: rgba($bg_color, .99)
+		overflow-y: auto
+		overflow-x: hidden
+		.navbar__list
+			position: relative
+			right: 0
+			padding-top: 50px
+			text-align: center
+			transition: all .1s
+			z-index: 2
+			
+		.navbar__link
+			display: block
+			margin: 0
+			padding: 1.5rem 0
+			font-size: 16px
+			text-decoration: none
+			color: #000
+			transition: all .15s
+
+			&:hover 
+				background-color: rgba(0,0,0,.1)
+				text-decoration: none
+				transition: all .15s
+
+		.navbar__toggle
+			top: 40px
+			right: 40px
+			background-color: transparent
+			transition: all .25s
+			&:before 
+				transition: all .25s
+				top: 0
+				transform: rotate(45deg)
+			&:after 
+				transition: all .25s
+				top: -0px
+				transform: rotate(-45deg)
+
+
+	/* ---------------------------------------
+		Social icons 
+	 --------------------------------------- */
+	.socialIcons--positioned
+		display: none
+	.navbar__menu--expanded 
+		.socialIcons--hidden
+			display: block
+
+	/**/
+
+
+
+@media only screen and (max-width : 767px)
+
+	/* ---------------------------------------
+		Header
+	 --------------------------------------- */
+	.author-photo
+		width: 180px
+		filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.5))
+
+	.pageTitle
+		height: auto
+		margin-top: 18vh
+		font-size: 9px
+		&__additional
+			font-size: 1.75em
+
+
+	/* ---------------------------------------
+		navigation 
+	 --------------------------------------- */
+	.navbar__menu--expanded 
+		width: 100%
+		border-left: none
+		
+		.navbar__link
+			padding: 1rem 0
+
+
+
+
+
+	/**/
+
+
+@media only screen and (max-width : 575px)
+
+	/* ---------------------------------------
+		navigation 
+	 --------------------------------------- */
+	.navbar__menu--expanded 
+		.navbar__toggle
+			right: 15px
+
+
+
+
+	/**/
+
+
+@media only screen and (max-width : 480px)
+
+	/**/
+
+
+
+@media only screen and (max-width : 320px)
+
+	/**/
+
+
+
+
+
+// @media only screen and (min-width : 320px)
+
+// 	/**/
+
+
+
+// @media only screen and (min-width : 480px)
+
+// 	/**/
+
+
+// @media only screen and (min-width : 576px)
+
+// 	/**/
+
+
+// @media only screen and (min-width : 768px)
+
+// 	/**/
+
+
+
+// @media only screen and (min-width : 992px)
+
+// 	/**/
+
+
+
+// @media only screen and (min-width : 1200px)
+
+// 	/**/
