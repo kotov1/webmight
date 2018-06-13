@@ -1,11 +1,10 @@
 /* Custom scripts */
 
-"use strict";
+
 
 $(function() {
 
-	// bootsrap scrollspy
-	// $('body').scrollspy({ target: '.navbar-collapse' })
+	"use strict";
 
 	// Mobile menu
 	$(".navbar__menu").click(function() {
@@ -39,7 +38,7 @@ $(function() {
 
     // porfolio filtration
         // automatic counting number of works in category and putting value in <sub> tag
-    var countLandings = countMultipages = countEdits = countTurnkeys = countShops= 0;
+    var countLandings = countMultipages = countEdits = countTurnkeys = countShops = 0;
     $('.portfolio__works .mix').each(function(i, el) {
         if($(el).hasClass('landings')) ++countLandings;
         if($(el).hasClass('multipages')) ++countMultipages;
@@ -62,16 +61,19 @@ $(function() {
         // if filter have disable class, restricting click
     $(".portfolio__filter").not('.portfolio__filter--disabled').click(function() {
         $(".portfolio__filter").not('.portfolio__filter--disabled').children().fadeOut(1e3);
-        $(this).children().fadeIn(1e3)
+        $(this).children().fadeIn(1e3);
     });
 
 
-// rotating gears with page scroll
+	// rotating gears with page scroll
     $(window).scroll(function() {
         var theta = $(window).scrollTop() / 50 % Math.PI;
         $('.page__gear--left').css({ transform: 'rotate(' + theta + 'rad)' });
         $('.page__gear--right').css({ transform: 'rotate(-' + theta + 'rad)' });
-    });
+	});
+	
+
+	
 
 
 });
