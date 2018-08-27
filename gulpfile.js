@@ -25,11 +25,8 @@ var gulp           = require('gulp'),
 
 gulp.task('js', function() {
 	return gulp.src([
-		'app/libs/animsition/dist/js/animsition.min.js',
 		'app/libs/typed.js/lib/typed.min.js',
-		'app/libs/particles.js/particles.min.js',
-		'app/js/particles-config.js',
-		'app/libs/mixitup.min.js',
+		'app/libs/mixitup/dist/mixitup.min.js',
 		'app/js/common.js'
 		])
 	.pipe(concat('scripts.js'))

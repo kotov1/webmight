@@ -26,26 +26,22 @@
 
 		<!-- google fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,300,400,700,700i&amp;subset=cyrillic" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&amp;subset=cyrillic" rel="stylesheet">
 
 	<title>Power of web</title>
 
 	<!-- bootstrap grid -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap-grid.min.css">
+
 	<!-- fontawesome -->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-	<!-- animsition -->
-	<link rel="stylesheet" href="libs/animsition/dist/css/animsition.min.css">
+
 
 	<link rel="stylesheet" href="css/style.css">
 
 
 </head>
 
-<body class="animsition">
-
-	<!-- particles.js -->
-	<div id="particles-js"></div>
+<body>
 
 	<!-- Page -->
 	<div class="page">
@@ -62,21 +58,22 @@
 							<div class="navbar__toggle"></div>
 							<ul class="navbar__list">
 								<li><a class="navbar__link" href="#navbar">главная</a></li>
-								<li><a class="navbar__link" href="#">услуги</a></li>
-								<li><a class="navbar__link" href="#">цены</a></li>
+								<li><a class="navbar__link" href="#services">услуги</a></li>
+								<!-- <li><a class="navbar__link" href="#">цены</a></li> -->
 								<li><a class="navbar__link" href="#portfolio">портфолио</a></li>
-								<li><a class="navbar__link" href="#">связь</a></li>
+								<li><a class="navbar__link" href="#contact">связь</a></li>
 							</ul>
 						<!-- hidden navbar social links -->
 							<div class="socialIcons socialIcons--hidden">
 								<ul>
-									<li><a href=""><i class="fas fa-phone" aria-hidden="true"></i></a></li>
+									<li><a href="tel:+380995037553"><i class="fas fa-phone" aria-hidden="true"></i></a></li>
+									<li><a href="mailto:kotov0991@gmail.com"><i class="fas fa-envelope" aria-hidden="true"></i></a></li>
 									<li><a href="https://vk.com/petukhovpetr" target="_blank" rel="noopener"><i class="fab fa-vk" aria-hidden="true"></i></a></li>
-									<li><a href=""><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
-									<li><a href=""><i class="fab fa-skype" aria-hidden="true"></i></a></li>
-									<li><a href=""><i class="fab fa-viber" aria-hidden="true"></i></a></li>
-									<li><a href=""><i class="fab fa-telegram" aria-hidden="true"></i></a></li>
-									<li><a href=""><i class="fab fa-whatsapp" aria-hidden="true"></i></a></li>
+									<li><a href="https://www.facebook.com/petr.petukhov.980" target="_blank" rel="noopener"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
+									<li><a href="skype:pekentiy"><i class="fab fa-skype" aria-hidden="true"></i></a></li>
+									<li><a href="viber://chat?number=380995037553"><i class="fab fa-viber" aria-hidden="true"></i></a></li>
+									<li><a href="tg://resolve?domain=petrpetukhov"><i class="fab fa-telegram" aria-hidden="true"></i></a></li>
+									<li><a href="https://api.whatsapp.com/send?phone=380995037553"><i class="fab fa-whatsapp" aria-hidden="true"></i></a></li>
 								</ul>
 							</div>
 							<!-- hidden navbar social links end -->
@@ -86,6 +83,7 @@
 		</nav>
 		<!-- Menu end -->
 
+
 		<!-- Header -->
 		<header class="header" id="header">
 			<!-- background -->
@@ -93,13 +91,14 @@
 				<!-- Social icons -->
 				<div class="socialIcons socialIcons--positioned">
 					<ul>
-						<li><a href=""><i class="fas fa-phone" aria-hidden="true"></i></a></li>
+						<li><a href="tel:+380995037553"><i class="fas fa-phone" aria-hidden="true"></i></a></li>
+						<li><a href="mailto:kotov0991@gmail.com"><i class="fas fa-envelope" aria-hidden="true"></i></a></li>
 						<li><a href="https://vk.com/petukhovpetr" target="_blank" rel="noopener"><i class="fab fa-vk" aria-hidden="true"></i></a></li>
-						<li><a href=""><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
-						<li><a href=""><i class="fab fa-skype" aria-hidden="true"></i></a></li>
-						<li><a href=""><i class="fab fa-viber" aria-hidden="true"></i></a></li>
-						<li><a href=""><i class="fab fa-telegram" aria-hidden="true"></i></a></li>
-						<li><a href=""><i class="fab fa-whatsapp" aria-hidden="true"></i></a></li>
+						<li><a href="https://www.facebook.com/petr.petukhov.980" target="_blank" rel="noopener"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
+						<li><a href="skype:pekentiy"><i class="fab fa-skype" aria-hidden="true"></i></a></li>
+						<li><a href="viber://chat?number=380995037553"><i class="fab fa-viber" aria-hidden="true"></i></a></li>
+						<li><a href="tg://resolve?domain=petrpetukhov"><i class="fab fa-telegram" aria-hidden="true"></i></a></li>
+						<li><a href="https://api.whatsapp.com/send?phone=380995037553"><i class="fab fa-whatsapp" aria-hidden="true"></i></a></li>
 					</ul>
 				</div>
 				<!-- Social icons end -->
@@ -125,244 +124,437 @@
 			</div>
 		</header>
 		<!-- Header end -->
+
+
+		<!-- Services -->
+		<section class="services" id="services">
+
+			<div class="container">
+
+					<div class="section__titleLine row justify-content-between align-items-center">
+						<div class="col-12 col-sm-auto">
+							<h2 class="section__title">услуги.</h2>
+						</div>
+						<div class="col-12 col-sm-auto">
+							<h3 class="section__subtitle"><b>услуги,</b> предлагаемые мной</h3>
+						</div>
+					</div>
+
+				<div class="row m-5">
+					<div class="col-xl-4 col-md-6 col-12">
+						<!-- Item 1 -->
+						<div class="service-box">
+							<div class="service-picture">
+								<!-- icon -->
+								<img src="img/icons/1.png" alt="our service">
+							</div>
+							<div class="service-text">
+								<!-- Title -->
+								<span>Правки на сайтах</span>
+								<!-- Text -->
+								<p class="raleway">Доработка верстки, устранение ошибок, ускорение загрузки сайта.</p>
+							</div>
+						</div>
+						<!-- Item end -->
+					</div>
+					<div class="col-xl-4 col-md-6 col-12">
+						<!-- Item 2 -->
+						<div class="service-box">
+							<div class="service-picture">
+								<!-- icon -->
+								<img src="img/icons/2.png" alt="our service">
+							</div>
+							<div class="service-text">
+								<!-- Title -->
+								<span>Верстка страниц по дизайн-макетам</span>
+								<!-- Text -->
+								<p class="raleway">Верстка страниц по дизайн-макетам (psd, sketch(через zeplin), adobe xd, figma). Desktop first \ Mobile first</p>
+							</div>
+						</div>
+						<!-- Item end -->
+					</div>
+					<div class="col-xl-4 col-md-6 col-12">
+						<!-- Item 3 -->
+						<div class="service-box">
+							<div class="service-picture">
+								<!-- icon -->
+								<img src="img/icons/3.png" alt="our service">
+							</div>
+							<div class="service-text">
+								<!-- Title -->
+								<span>Адаптирование сайтов</span>
+								<!-- Text -->
+								<p class="raleway">Корректное отображение сайтов на всех типах экранов, операционных системах. Кроссбраузерность IE10+</p>
+							</div>
+						</div>
+						<!-- Item end -->
+					</div>
+					<div class="col-xl-4 col-md-6 col-12">
+						<!-- Item 4 -->
+						<div class="service-box">
+							<div class="service-picture">
+								<!-- icon -->
+								<img src="img/icons/4.png" alt="our service">
+							</div>
+							<div class="service-text">
+								<!-- Title -->
+								<span>Скрипты</span>
+								<!-- Text -->
+								<p class="raleway">Написание калькуляторов. Подключение и настройка Jquery-плагинов, форм обратной связи, карт, метрик, виджетов соц. сетей.</p>
+							</div>
+						</div>
+						<!-- Item end -->
+					</div>
+					<div class="col-xl-4 col-md-6 col-12">
+						<!-- Item 5 -->
+						<div class="service-box">
+							<div class="service-picture">
+								<!-- icon -->
+								<img src="img/icons/5.png" alt="our service">
+							</div>
+							<div class="service-text">
+								<!-- Title -->
+								<span>Верстка email писем</span>
+								<!-- Text -->
+								<p class="raleway">Верстка email писем по макетам или прототипам и тестирование в актуальных почтовых клиентах и устройствах</p>
+							</div>
+						</div>
+						<!-- Item end -->
+					</div>
+					<div class="col-xl-4 col-md-6 col-12">
+						<!-- Item 6 -->
+						<div class="service-box">
+							<div class="service-picture">
+								<!-- icon -->
+								<img src="img/icons/6.png" alt="our service">
+							</div>
+							<div class="service-text">
+								<!-- Title -->
+								<span>Сайт под ключ</span>
+								<!-- Text -->
+								<p class="raleway">Создание сайтов под ключ на основе готовых решений (дешевый вариант) или с уникальным дизайном (более дорогой вариант)</p>
+							</div>
+						</div>
+						<!-- Item end -->
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- Services end -->
 		
+
 		<!-- Portfolio -->
 		<section class="portfolio" id="portfolio">
 			<div class="container">
 				<div class="section__titleLine row justify-content-between">
-					<div class="col-auto">
+					<div class="col-12 col-sm-auto">
 						<h2 class="section__title">примеры работ.</h2>
 					</div>
-					<div class="col-auto">
+					<div class="col-12 col-sm-auto">
 						<h3 class="section__subtitle">здесь вы можете посмотреть <b>несколько примеров моих работ</b></h3>
 					</div>
 				</div>
 
 				<div class="portfolio__filters underlined-links	">
 					<ul>
-							<li>
-									<button type="button" class="portfolio__filter portfolio__filter--active" data-filter="all">все<sup class="activeSup">14</sup></button>
-							</li>
-							<li>
-									<button type="button" class="portfolio__filter" data-filter=".landings">лендинги (верстка)<sup class="displaySup displaySup__landings">0</sup></button>
-							</li>
-							<li>
-									<button type="button" class="portfolio__filter" data-filter=".multipages">многостраничные (верстка)<sup class="displaySup displaySup__multipages">0</sup></button>
-							</li>
-							<li>
-									<button type="button" class="portfolio__filter" data-filter=".edits">правки сайтов<sup class="displaySup  displaySup__edits">0</sup></button>
-							</li>
-							<li>
-									<button type="button" class="portfolio__filter" data-filter=".turnkeys">сайты под ключ<sup class="displaySup displaySup__turnkeys">0</sup></button>
-							</li>
-							<li>
-									<button type="button" class="portfolio__filter" data-filter="">интернет-магазины под ключ<sup class="displaySup displaySup__shops">0</sup></button>
-							</li>
+						<li>
+							<button type="button" class="portfolio__filter" data-filter=".multipages">многостраничные (верстка)<sup class=" displaySup__multipages activeSup"></sup></button>
+						</li>
+						<li>
+							<button type="button" class="portfolio__filter" data-filter=".landings">лендинги (верстка)<sup class="displaySup displaySup__landings activeSup"></sup></button>
+						</li>
+						<li>
+							<button type="button" class="portfolio__filter" data-filter=".edits">правки сайтов<sup class="displaySup displaySup__edits"></sup></button>
+						</li>
+						<li>
+							<button type="button" class="portfolio__filter" data-filter=".turnkeys">сайты под ключ<sup class="displaySup displaySup__turnkeys"></sup></button>
+						</li>
+						<li>
+							<button type="button" class="portfolio__filter portfolio__filter--active" data-filter="all">все<sup class="displaySup displaySup__all"></sup></button>
+						</li>
 					</ul>
 				</div>
 				<!-- portfolio__filters end -->
 				
-				<div class="portfolio__works" id="container-mixItUp">
+				<div class="portfolio__works" id="container-mixItU">
 						
-					<div class="row"> 
+					<div class="row no-gutters"> 
 							
-							<!-- Start Work box 1 -->
-							<div class="col-12 col-sm-6 col-lg-4 mix turnkeys">
-									<div class="portfolio__item">
-										<div class="portfolio__img portfolio__landing1" 
-												style="background-image: url('img/portfolio/prodaga-kvartir.jpg')">
-										</div>
-										<div class="portfolio__contents	">
-												<h3 class="portfolio__contents-title underlined-links">
-														<a href="#">Лендинг под ключ</a>
-												</h3>
-												<div class="portfolio__contents-meta">clocks</div>
-										</div>
+						<!-- Start Work box 1 -->
+						<div class="col-12 col-sm-6 col-lg-4 mix turnkeys">
+								<div class="portfolio__item">
+									<div class="portfolio__img portfolio__landing1" 
+											style="background-image: url('img/portfolio/prodaga-kvartir.jpg')">
 									</div>
-							</div>
-							<!-- End Work box 1 -->
+									<div class="portfolio__contents	">
+											<h3 class="portfolio__contents-title underlined-links">
+													<a href="#">Лендинг под ключ</a>
+											</h3>
+											<div class="portfolio__contents-meta">clocks</div>
+									</div>
+								</div>
+						</div>
+						<!-- End Work box 1 -->
 
-							<!-- Start Work box 1 -->
-							<div class="col-12 col-sm-6 col-lg-4 mix landings">
-									<div class="portfolio__item">
-										<div class="portfolio__img portfolio__landing1" 
-												style="background-image: url('img/portfolio/hr-method.jpg')">
-										</div>
-										<div class="portfolio__contents	">
-												<h3 class="portfolio__contents-title underlined-links">
-														<a href="#">Верстка лендинга из psd макета</a>
-												</h3>
-												<div class="portfolio__contents-meta">clocks</div>
-										</div>
+						<!-- Start Work box 1 -->
+						<div class="col-12 col-sm-6 col-lg-4 mix landings">
+								<div class="portfolio__item">
+									<div class="portfolio__img portfolio__landing1" 
+											style="background-image: url('img/portfolio/hr-method.jpg')">
 									</div>
-							</div>
-							<!-- End Work box 1 -->
-							
-							<!-- Start Work box 2 -->
-							<div class="col-12 col-sm-6 col-lg-4 mix multipages">
-									<div class="portfolio__item">
-										<div class="portfolio__img portfolio__landing1" 
-												style="background-image: url('img/portfolio/ICOpulse.jpg')">
-										</div>
-										<div class="portfolio__contents">
-												<h3 class="portfolio__contents-title underlined-links	">
-														<a href="#">Верстка страниц многостраничного сайта из zeplin</a>
-												</h3>
-												<div class="portfolio__contents-meta">clocks</div>
-										</div>
+									<div class="portfolio__contents	">
+											<h3 class="portfolio__contents-title underlined-links">
+													<a href="#">Верстка лендинга из psd макета</a>
+											</h3>
+											<div class="portfolio__contents-meta">clocks</div>
 									</div>
-							</div>
-							<!-- End Work box 2 -->
-							
-							<!-- Start Work box 3 -->
-							<div class="col-12 col-sm-6 col-lg-4 mix multipages">
-									<div class="portfolio__item">
-										<div class="portfolio__img portfolio__landing1" 
-												style="background-image: url('img/portfolio/gold.jpg')">
-										</div>
-										<div class="portfolio__contents">
-												<h3 class="portfolio__contents-title underlined-links	">
-														<a href="#">Верстка страниц многостраничного сайта из psd макета</a>
-												</h3>
-												<div class="portfolio__contents-meta">clocks</div>
-										</div>
+								</div>
+						</div>
+						<!-- End Work box 1 -->
+						
+						<!-- Start Work box 2 -->
+						<div class="col-12 col-sm-6 col-lg-4 mix multipages">
+								<div class="portfolio__item">
+									<div class="portfolio__img portfolio__landing1" 
+											style="background-image: url('img/portfolio/ICOpulse.jpg')">
 									</div>
-							</div>
-							<!-- End Work box 3 -->
-							
-							<!-- Start Work box 3 -->
-							<div class="col-12 col-sm-6 col-lg-4 mix multipages">
-									<div class="portfolio__item">
-										<div class="portfolio__img portfolio__landing1" 
-												style="background-image: url('img/portfolio/Ohmycake.jpg')">
-										</div>
-										<div class="portfolio__contents	">
-												<h3 class="portfolio__contents-title underlined-links">
-														<a href="#">Верстка главной страницы онлайн магазина из psd макета</a>
-												</h3>
-												<div class="portfolio__contents-meta">clocks</div>
-										</div>
+									<div class="portfolio__contents">
+											<h3 class="portfolio__contents-title underlined-links	">
+													<a href="#">Верстка страниц многостраничного сайта из sketch макета</a>
+											</h3>
+											<div class="portfolio__contents-meta">clocks</div>
 									</div>
-							</div>
-							<!-- End Work box 3 -->
-							
-							<!-- Start Work box 5 -->
-							<div class="col-12 col-sm-6 col-lg-4 mix multipages">
-									<div class="portfolio__item">
-										<div class="portfolio__img portfolio__landing1" 
-												style="background-image: url('img/portfolio/family-group.jpg')">
-										</div>
-										<div class="portfolio__contents">
-												<h3 class="portfolio__contents-title underlined-links	">
-														<a href="#">Верстка страниц многостраничного сайта из psd макета</a>
-												</h3>
-												<div class="portfolio__contents-meta">clocks</div>
-										</div>
+								</div>
+						</div>
+						<!-- End Work box 2 -->
+						
+						<!-- Start Work box 3 -->
+						<div class="col-12 col-sm-6 col-lg-4 mix multipages">
+								<div class="portfolio__item">
+									<div class="portfolio__img portfolio__landing1" 
+										style="background-image: url('img/portfolio/mpk.png')">
 									</div>
-							</div>
-							<!-- End Work box 5 -->
+									<div class="portfolio__contents">
+											<h3 class="portfolio__contents-title underlined-links	">
+													<a href="#">Верстка страниц многостраничного сайта из psd макета</a>
+											</h3>
+											<div class="portfolio__contents-meta">clocks</div>
+									</div>
+								</div>
+						</div>
+						<!-- End Work box 3 -->
+						
+						<!-- Start Work box 3 -->
+						<div class="col-12 col-sm-6 col-lg-4 mix multipages">
+								<div class="portfolio__item">
+									<div class="portfolio__img portfolio__landing1" 
+											style="background-image: url('img/portfolio/Ohmycake.jpg')">
+									</div>
+									<div class="portfolio__contents	">
+											<h3 class="portfolio__contents-title underlined-links">
+													<a href="#">Верстка главной страницы онлайн магазина из psd макета</a>
+											</h3>
+											<div class="portfolio__contents-meta">clocks</div>
+									</div>
+								</div>
+						</div>
+						<!-- End Work box 3 -->
+						
+						<!-- Start Work box 5 -->
+						<div class="col-12 col-sm-6 col-lg-4 mix multipages">
+								<div class="portfolio__item">
+									<div class="portfolio__img portfolio__landing1" 
+											style="background-image: url('img/portfolio/family-group.jpg')">
+									</div>
+									<div class="portfolio__contents">
+											<h3 class="portfolio__contents-title underlined-links	">
+													<a href="#">Верстка страниц многостраничного сайта из psd макета</a>
+											</h3>
+											<div class="portfolio__contents-meta">clocks</div>
+									</div>
+								</div>
+						</div>
+						<!-- End Work box 5 -->
 
-							<!-- Start Work box 6 -->
-							<div class="col-12 col-sm-6 col-lg-4 mix landings">
-									<div class="portfolio__item">
-										<div class="portfolio__img portfolio__landing1" 
-												style="background-image: url('img/portfolio/hotel.jpg')">
-										</div>
-										<div class="portfolio__contents	">
-												<h3 class="portfolio__contents-title underlined-links">
-														<a href="#">Верстка лендинга из psd макета</a>
-												</h3>
-												<div class="portfolio__contents-meta">clocks</div>
-										</div>
+						<!-- Start Work box 5 -->
+						<div class="col-12 col-sm-6 col-lg-4 mix multipages">
+								<div class="portfolio__item">
+									<div class="portfolio__img portfolio__landing1" 
+											style="background-image: url('img/portfolio/baltservice.png')">
 									</div>
-							</div>
-							<!-- End Work box 6 -->
-
-							<!-- Start Work box 6 -->
-							<div class="col-12 col-sm-6 col-lg-4 mix landings">
-									<div class="portfolio__item">
-										<div class="portfolio__img portfolio__landing1" 
-												style="background-image: url('img/portfolio/autoprofi.jpg')">
-										</div>
-										<div class="portfolio__contents	">
-												<h3 class="portfolio__contents-title underlined-links">
-														<a href="#">Верстка лендинга из psd макета</a>
-												</h3>
-												<div class="portfolio__contents-meta">clocks</div>
-										</div>
+									<div class="portfolio__contents">
+											<h3 class="portfolio__contents-title underlined-links	">
+													<a href="#">Верстка страниц многостраничного сайта из макета Adobe XD</a>
+											</h3>
+											<div class="portfolio__contents-meta">clocks</div>
 									</div>
-							</div>
-							<!-- End Work box 6 -->
+								</div>
+						</div>
+						<!-- End Work box 5 -->
 
-							<!-- Start Work box 6 -->
-							<div class="col-12 col-sm-6 col-lg-4 mix landings">
-									<div class="portfolio__item">
-										<div class="portfolio__img portfolio__landing1" 
-												style="background-image: url('img/portfolio/auto-reshenie.jpg')">
-										</div>
-										<div class="portfolio__contents	">
-												<h3 class="portfolio__contents-title underlined-links">
-														<a href="#">Верстка лендинга из psd макета</a>
-												</h3>
-												<div class="portfolio__contents-meta">clocks</div>
-										</div>
+						<!-- Start Work box 6 -->
+						<div class="col-12 col-sm-6 col-lg-4 mix landings">
+								<div class="portfolio__item">
+									<div class="portfolio__img portfolio__landing1" 
+											style="background-image: url('img/portfolio/hotel.jpg')">
 									</div>
-							</div>
-							<!-- End Work box 5 -->
-
-							<!-- Start Work box 6 -->
-							<div class="col-12 col-sm-6 col-lg-4 mix landings">
-									<div class="portfolio__item">
-										<div class="portfolio__img portfolio__landing1" 
-												style="background-image: url('img/portfolio/ch-avto.jpg')">
-										</div>
-										<div class="portfolio__contents	">
-												<h3 class="portfolio__contents-title underlined-links">
-														<a href="#">Верстка лендинга из psd макета</a>
-												</h3>
-												<div class="portfolio__contents-meta">clocks</div>
-										</div>
+									<div class="portfolio__contents	">
+											<h3 class="portfolio__contents-title underlined-links">
+													<a href="#">Верстка лендинга из psd макета</a>
+											</h3>
+											<div class="portfolio__contents-meta">clocks</div>
 									</div>
-							</div>
-							<!-- End Work box 5 -->
+								</div>
+						</div>
+						<!-- End Work box 6 -->
 
-							<!-- Start Work box 6 -->
-							<div class="col-12 col-sm-6 col-lg-4 mix landings">
-									<div class="portfolio__item">
-										<div class="portfolio__img portfolio__landing1" 
-												style="background-image: url('img/portfolio/dino.jpg')">
-										</div>
-										<div class="portfolio__contents	">
-												<h3 class="portfolio__contents-title underlined-links">
-														<a href="#">Верстка лендинга из psd макета</a>
-												</h3>
-												<div class="portfolio__contents-meta">clocks</div>
-										</div>
+						<!-- Start Work box 6 -->
+						<div class="col-12 col-sm-6 col-lg-4 mix landings">
+								<div class="portfolio__item">
+									<div class="portfolio__img portfolio__landing1" 
+											style="background-image: url('img/portfolio/autoprofi.jpg')">
 									</div>
-							</div>
-							<!-- End Work box 5 -->
-
-							<!-- Start Work box 5 -->
-							<div class="col-12 col-sm-6 col-lg-4 mix multipages">
-									<div class="portfolio__item">
-										<div class="portfolio__img portfolio__landing1" 
-												style="background-image: url('img/portfolio/oreshki.jpg')">
-										</div>
-										<div class="portfolio__contents">
-												<h3 class="portfolio__contents-title underlined-links	">
-														<a href="#">Верстка страниц онлайн-магазина из psd макета</a>
-												</h3>
-												<div class="portfolio__contents-meta">clocks</div>
-										</div>
+									<div class="portfolio__contents	">
+											<h3 class="portfolio__contents-title underlined-links">
+													<a href="#">Верстка лендинга из psd макета</a>
+											</h3>
+											<div class="portfolio__contents-meta">clocks</div>
 									</div>
+								</div>
+						</div>
+						<!-- End Work box 6 -->
+
+						<!-- Start Work box 6 -->
+						<div class="col-12 col-sm-6 col-lg-4 mix landings">
+								<div class="portfolio__item">
+									<div class="portfolio__img portfolio__landing1" 
+											style="background-image: url('img/portfolio/auto-reshenie.jpg')">
+									</div>
+									<div class="portfolio__contents	">
+											<h3 class="portfolio__contents-title underlined-links">
+													<a href="#">Верстка лендинга из psd макета</a>
+											</h3>
+											<div class="portfolio__contents-meta">clocks</div>
+									</div>
+								</div>
+						</div>
+						<!-- End Work box 5 -->
+
+						<!-- Start Work box 6 -->
+						<div class="col-12 col-sm-6 col-lg-4 mix landings">
+								<div class="portfolio__item">
+									<div class="portfolio__img portfolio__landing1" 
+											style="background-image: url('img/portfolio/ch-avto.jpg')">
+									</div>
+									<div class="portfolio__contents	">
+											<h3 class="portfolio__contents-title underlined-links">
+													<a href="#">Верстка лендинга из psd макета</a>
+											</h3>
+											<div class="portfolio__contents-meta">clocks</div>
+									</div>
+								</div>
+						</div>
+						<!-- End Work box 5 -->
+
+						<!-- Start Work box 6 -->
+						<div class="col-12 col-sm-6 col-lg-4 mix landings">
+								<div class="portfolio__item">
+									<div class="portfolio__img portfolio__landing1" 
+											style="background-image: url('img/portfolio/dino.jpg')">
+									</div>
+									<div class="portfolio__contents	">
+											<h3 class="portfolio__contents-title underlined-links">
+													<a href="#">Верстка лендинга из psd макета</a>
+											</h3>
+											<div class="portfolio__contents-meta">clocks</div>
+									</div>
+								</div>
+						</div>
+						<!-- End Work box 5 -->
+
+						<!-- Start Work box 5 -->
+						<div class="col-12 col-sm-6 col-lg-4 mix multipages">
+							<div class="portfolio__item">
+								<div class="portfolio__img portfolio__landing1" 
+										style="background-image: url('img/portfolio/reputation.jpg')">
+								</div>
+								<div class="portfolio__contents">
+										<h3 class="portfolio__contents-title underlined-links	">
+												<a href="#">Верстка внутренних страниц многостраничного сайта из sketch макета</a>
+										</h3>
+										<div class="portfolio__contents-meta">clocks</div>
+								</div>
 							</div>
-							<!-- End Work box 5 -->
+						</div>
+						<!-- End Work box 5 -->
 
+						<!-- Start Work box 5 -->
+						<div class="col-12 col-sm-6 col-lg-4 mix multipages">
+							<div class="portfolio__item">
+								<div class="portfolio__img" 
+										style="background-image: url('img/portfolio/gold.jpg')">
+								</div>
+								<div class="portfolio__contents">
+										<h3 class="portfolio__contents-title underlined-links	">
+												<a href="#">Верстка страниц многостраничного сайта из PSD макета</a>
+										</h3>
+										<div class="portfolio__contents-meta">clocks</div>
+								</div>
+							</div>
+						</div>
+						<!-- End Work box 5 -->
 
+						<!-- Start Work box 5 -->
+						<div class="col-12 col-sm-6 col-lg-4 mix multipages">
+							<div class="portfolio__item">
+								<div class="portfolio__img no-listing" 
+										style="background-image: url('img/portfolio/rostok.png')">
+								</div>
+								<div class="portfolio__contents">
+										<h3 class="portfolio__contents-title underlined-links	">
+												<a href="#">Верстка страниц многостраничного сайта из PSD макета</a>
+										</h3>
+										<a href="http://rostok.webmight.ru/" class="portfolio__contents-meta" target="_blank">clocks</a>
+								</div>
+							</div>
+						</div>
+						<!-- End Work box 5 -->
 
+						<!-- Start Work box 5 -->
+						<div class="col-12 col-sm-6 col-lg-4 mix multipages">
+							<div class="portfolio__item">
+								<div class="portfolio__img portfolio__landing1" 
+										style="background-image: url('img/portfolio/oreshki.jpg')">
+								</div>
+								<div class="portfolio__contents">
+										<h3 class="portfolio__contents-title underlined-links	">
+												<a href="#">Верстка страниц онлайн-магазина из psd макета</a>
+										</h3>
+										<div class="portfolio__contents-meta">clocks</div>
+								</div>
+							</div>
+						</div>
+						<!-- End Work box 5 -->
+
+						<!-- Start Work box 5 -->
+						<div class="col-12 col-sm-6 col-lg-4 mix edits">
+							<div class="portfolio__item">
+								<div class="portfolio__img portfolio__landing1" 
+										style="background-image: url('img/portfolio/akrobatika-responsive.png')">
+								</div>
+								<div class="portfolio__contents">
+										<h3 class="portfolio__contents-title underlined-links	">
+												<a href="#">Создание мобильной версии сайта</a>
+										</h3>
+										<a href="http://tula-akrobatika.ru/" class="portfolio__contents-meta" target="_blank">clocks</a>
+								</div>
+							</div>
+						</div>
+						<!-- End Work box 5 -->
 
 					</div>
 					<!-- .row -->
+
 				</div>
 				<!-- portfolio__works end -->
 
@@ -371,8 +563,84 @@
 		<!-- Portfolio end -->
 
 
+		<!-- Contact -->
+		<section class="contact" id="contact">
+
+			<div class="container">
+
+				<div class="section__titleLine row justify-content-between align-items-center">
+					<div class="col-12 col-sm-auto">
+						<h2 class="section__title">связаться.</h2>
+					</div>
+					<div class="col-12 col-sm-auto">
+						<h3 class="section__subtitle">напишите мне <b>сообщение</b></h3>
+					</div>
+				</div>
+
+				<!-- Contact form -->
+				<div class="contact-form">
+					<form action="#" id="form">
+						<div class="row no-gutters">
+							<div class="col-md-4 col-12">
+								<!-- Name input -->
+								<input type="text" name="name" placeholder="Имя" required>
+								<!-- Email input -->
+								<input type="email" name="email" placeholder="Email" required>
+							</div>
+							<div class="col-md-7  col-12">
+								<!-- Text input -->
+								<textarea name="text" cols="30" rows="10" placeholder="Сообщение" required></textarea>
+							</div>
+							<div class="col-md-1 col-12">
+								<!-- Submit form button -->
+								<button class="submit"><i class="fa fa-paper-plane" aria-hidden="true"></i></button>
+							</div>
+						</div>
+					</form>
+				</div>
+				<!-- Contact form end -->
+
+			</div>
+
+		</section>
+		<!-- Contact end -->
+
+
+		<!-- Footer -->
+		<footer class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-6 col-12">
+						<!-- Logo  -->
+						<a class="footer-brand" href="index.html">Petr Petukhov.</a>
+						<!-- Copyright  -->
+						<p class="copyright">© Copyright 2018. All rights reserved </p>
+					</div>
+					<div class="col-sm-6 col-12">
+						<!-- Social icons -->
+						<ul class="footer__socialIcons">
+							<li><a href="tel:+380995037553"><i class="fas fa-phone" aria-hidden="true"></i></a></li>
+							<li><a href="mailto:kotov0991@gmail.com"><i class="fas fa-envelope" aria-hidden="true"></i></a></li>
+							<li><a href="https://vk.com/petukhovpetr" target="_blank" rel="noopener"><i class="fab fa-vk" aria-hidden="true"></i></a></li>
+							<li><a href="https://www.facebook.com/petr.petukhov.980" target="_blank" rel="noopener"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
+							<li><a href="skype:pekentiy"><i class="fab fa-skype" aria-hidden="true"></i></a></li>
+							<li><a href="viber://chat?number=380995037553"><i class="fab fa-viber" aria-hidden="true"></i></a></li>
+							<li><a href="tg://resolve?domain=petrpetukhov"><i class="fab fa-telegram" aria-hidden="true"></i></a></li>
+							<li><a href="https://api.whatsapp.com/send?phone=380995037553"><i class="fab fa-whatsapp" aria-hidden="true"></i></a></li>
+						</ul>
+						<!-- Email link  -->
+						<a href="mailto:kotov0991@gmail.com" class="footer-mail">kotov0991@gmail.com</a>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- Footer end -->
+
+
+
 	</div>
 	<!-- Page end-->
+
 
 	<div class="page__gear page__gear--left">*</div>
 	<div class="page__gear page__gear--right">*</div>
@@ -381,10 +649,14 @@
 
 
 	<!-- Jquery с облака и замена в случае отсутствия доступа к облаку  -->
-	<script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 	<script>window.jQuery || document.write('<script src="libs/jquery/dist/jquery.min.js"><\/script>')</script>
 
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r67/three.min.js"></script>
+
+
 	<script src="js/scripts.js"></script>
+	<script src="js/bg-config.js"></script>
 
 </body>
 </html>

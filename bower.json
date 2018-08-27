@@ -18,9 +18,5 @@
   "dependencies": {
     "jquery": "^3.3.1",
     "typed.js": "^2.0.6"
-  },
-  "devDependencies": {
-    "animsition": "^4.0.2",
-    "particles.js": "^2.0.0"
   }
 }

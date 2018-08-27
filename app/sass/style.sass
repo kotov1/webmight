@@ -7,7 +7,6 @@
 /* ------------------------------------- 
 
 	Common styles
-
  ------------------------------------- */
 body
 	max-width: 1920px
@@ -16,10 +15,6 @@ body
 	padding: 0
 	position: relative
 	font: 400 1rem/1.4 $main_font
-	background-image: url(../img/loader.svg)
-	background-repeat: no-repeat
-	background-position: 51% 49%
-	background-attachment: fixed
 	overflow-x: hidden
 	color: $text_color
 	background-color: $bg_color
@@ -93,31 +88,24 @@ a
 			color: currentColor
 
 
+
 /* ---------------------------------------
 
-	particles.js
-
+	bg.js
  --------------------------------------- */
-canvas
-	display: block
-	vertical-align: bottom
-
-#particles-js
-	position: absolute
+.bg-canvas
+	position: fixed
+	top: 0
+	left: 0
 	width: 100%
 	height: 100%
 	background-color: #fafafa
-	background-image: url("")
-	background-repeat: no-repeat
-	background-size: cover
-	background-position: 50% 50%
-	z-index: 1
+	z-index: 0
 
 
 /* ---------------------------------------
 
 	typed.js
-
  --------------------------------------- */
 .typed-cursor
 	opacity: 1
@@ -136,7 +124,6 @@ canvas
 /* ------------------------------------- 
 
 	author-photo
-
  ------------------------------------- */
 .author-photo
 	display: block
@@ -150,7 +137,6 @@ canvas
 /* ------------------------------------- 
 
 	Titles and text
-
  ------------------------------------- */
 .pageTitle
 	margin: 25vh 0 0 5px
@@ -173,7 +159,7 @@ canvas
 		margin: 60px -15px 50px
 	&__title
 		margin: 0
-		font-size: 1.125rem
+		font-size: 1.25rem
 	&__subtitle
 		margin: 0
 		font-size: .875rem
@@ -187,7 +173,6 @@ canvas
 /* ---------------------------------------
 
 	Social icons 
-
  --------------------------------------- */
 .socialIcons
 	i[class*="fa"]
@@ -195,7 +180,7 @@ canvas
 		font-size: 16px
 		transition: .3s
 		&:hover
-			transform: scale(1.2)
+			transform: translateX(-4px)
 
 	&--positioned
 		position: absolute
@@ -217,7 +202,6 @@ canvas
 /* ---------------------------------------
 
 	navigation 
-
  --------------------------------------- */
 .navbar
 	position: fixed
@@ -225,7 +209,7 @@ canvas
 	left: 0
 	z-index: 9999999
 	width: 100%
-	padding: 10px 0
+	padding: 5px 0
 	background-color: rgba($bg_color, 0.95)
 	box-shadow: rgba(0,0,0,.15) 0 1px 10px
 	&__list
@@ -242,7 +226,6 @@ canvas
 /* ---------------------------------------
 
 	Header
-
  --------------------------------------- */
 .header
 	height: 70vh
@@ -257,12 +240,50 @@ canvas
 	width: 30px
 
 
+
+/* ---------------------------------------
+
+	Services
+ --------------------------------------- */
+.services
+	div[class*="row"]
+		margin-left: -5px
+		margin-right: -5px
+	div[class*="col"]
+		padding-left: 5px
+		padding-right: 5px
+		margin-bottom: 10px
+
+.service-text
+	margin-top: 10px
+	width: 100%
+	border-radius: 2px
+	position: relative
+	font-size: 14px
+	span
+		font-weight: bold
+	p
+		margin-top: 5px
+		font-weight: 300
+		color: #253138
+
+.service-box
+	height: 100%
+	padding: 15px 15px 10px
+	background-color: rgba(255, 255, 255, 0.8)
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04)
+
+.service-picture
+	img
+		display: block
+		width: 40px
+		height: 40px
+
+
 /* ---------------------------------------
 
 	Portfolio
-
  --------------------------------------- */
-
 .portfolio
 	&__filters
 		margin-bottom: 10px
@@ -280,26 +301,25 @@ canvas
 			cursor: pointer
 		.displaySup
 			display: none
-		&--disabled
-			opacity: .5
-			&:hover
-				cursor: default
-			&::after
-				display: none
-			.displaySup
-				display: inline
 
+	&__works
+		div[class*="row"]
+			margin-left: -5px
+			margin-right: -5px
+		div[class*="col"]
+			padding-left: 5px
+			padding-right: 5px
 	&__item
 		height: 300px
 		position: relative
-		margin-bottom: 30px
+		margin-bottom: 10px
 		overflow: hidden
 		box-shadow: 0 0 15px 0 rgba(#000,.2)
 		&:hover
 			.portfolio__contents
 				opacity: 1
 				transition: all .3s
-			.portfolio__img
+			.portfolio__img:not(.no-listing)
 				background-position: 50% 100%
 				transition: all 10s linear .8s
 
@@ -314,8 +334,6 @@ canvas
 		background-size: 100%
 		transition: all 2s linear .5s
 
-		
-		
 
 	&__contents
 		width: 100%
@@ -339,16 +357,190 @@ canvas
 					background-color: $bg_color
 		&-meta
 			padding-left: 30px
-			bottom: 20px
 			color: $bg_color
 
 
 				
 			
 
+/* ---------------------------------------
+
+	Contact
+ --------------------------------------- */
+.contact
+	position: relative
+	&::before
+		content: ''
+		display: block
+		width: 100%
+		height: 400px
+		position: absolute
+		top: 0
+		left: 0
+		background: url(../img/bg-map.png) no-repeat 50% 0
+		background-size: contain
+		opacity: .03
+		z-index: 0
+
+.contact-form
+	margin-top: 80px
+	div[class*="row"]
+		margin: -5px
+	div[class*="col-"]
+		padding: 0 5px
+
+input, textarea
+	width: 100%
+	margin-bottom: 10px
+	padding: 15px
+	border: none
+	border-radius: 2px
+	background-color: rgba(255, 255, 255, 0.8)
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04)
+	font: 14px $main_font
+	&:focus
+		outline: none
+		box-shadow: 0 0 5px rgba(0, 0, 0, 0.1)
+	&::placeholder
+		font: 14px $main_font
+
+	
+
+input
+	height: 50px
+
+textarea
+	height: 110px
+	resize: none
+
+.submit
+	background-image: linear-gradient(0deg, #FB273A 0%, #FF7248 100%)
+	color: #fff
+	font-size: 18px
+	width: 100%
+	text-align: center
+	border: none
+	border-radius: 2px
+	height: 110px
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04)
+	transition: .4s
+	cursor: pointer
+	&:hover
+		background-image: linear-gradient(0deg, #FB273A 0%, #FF7248 70%)
+		transition: .4s
+	.fa
+		transition: .4s
+	&:hover .fa
+		transform: scale(1.3)
+		transition: .4s
+
+.subscribe-sbmt
+	height: 50px
+
+
+/* --------------  Popup  --------------
+// .popup
+//   position: fixed
+//   display: -webkit-box
+//   display: -ms-flexbox
+//   display: flex
+//   bottom: 0
+//   left: 0
+//   z-index: 9999999999999999
+//   width: 100%
+//   height: 100%
+//   background-color: rgba(250, 250, 250, 0.8)
+
+// .n-active-popup
+//   display: none
+
+// .active-popup
+//   display: block
+//   -webkit-animation: fadeIn .5s
+//   animation: fadeIn .5s
+
+// .popup-window
+//   text-align: center
+//   margin: auto
+//   margin-top: 30vh
+//   padding: 30px 0 35px
+//   width: 400px
+//   -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04)
+//   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04)
+//   background-color: #fff
+//   img
+//     margin: auto
+//     width: 50px
+//     margin-bottom: 15px
+//   .item-title
+//     margin: 0 auto
+//   .text
+//     margin: 10px auto 0
+//   button
+//     margin-top: 15px
+//     background-image: -webkit-gradient(linear, left bottom, left top, from(#FB273A), to(#FF7248))
+//     background-image: linear-gradient(0deg, #FB273A 0%, #FF7248 100%)
+//     color: #fff
+//     padding: 10px 30px
+//     text-align: center
+//     border: none
+//     border-radius: 2px
+//     -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04)
+//     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04)
+//     -webkit-transition: .4s
+//     transition: .4s
+//     &:hover
+//       background-image: -webkit-gradient(linear, left bottom, left top, from(#FB273A), color-stop(70%, #FF7248))
+//       background-image: linear-gradient(0deg, #FB273A 0%, #FF7248 70%)
+//       -webkit-transition: .4s
+//       transition: .4s
 
 
 
+
+.footer
+	padding: 70px 0 50px
+
+.footer-social-icon
+	padding: 0
+	margin: 0
+	text-align: right
+	li
+		list-style-type: none
+		padding-left: 10px
+		display: inline
+		margin: 0
+	a .fa
+		font-size: 15px
+		transition: .3s
+		&:hover
+			transform: translateY(-4px)
+
+.footer-brand
+	font-size: 18px
+	font-weight: bold
+
+.copyright
+	margin-top: 5px
+	font-weight: 300
+
+
+.footer__socialIcons
+	margin: 0
+	padding-left: 0
+	display: flex
+	justify-content: flex-end
+	li
+		&:not(:first-child)
+			margin-left: 13px
+	
+.footer-mail
+	margin-top: 5px
+	font-weight: 300
+	float: right
+	&:hover
+		text-decoration: none
+		color: #000
 
 
 
